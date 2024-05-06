@@ -1,7 +1,8 @@
-import sys, os, docx
+import sys, os, docx, time
 from docxcompose.composer import Composer
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
 from UI.Mainwindow.Mainwindow import Ui_MainWindow  # Pfad entsprechend anpassen
+from DocGenerator import generate_document
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -9,6 +10,9 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         
+        # Management zwischen den combo boxen
+        self.ui.cob_typ.currentIndexChanged.connect(self.cob_management)
+
         # Navigation Buttons
         self.ui.pb_Schnittstellen.clicked.connect(lambda: self.switch_widget(0))          #_test.clicked.connect(self.on_pb_test_clicked)
         self.ui.pb_SoO.clicked.connect(lambda: self.switch_widget(1))
@@ -19,7 +23,19 @@ class MainWindow(QMainWindow):
 
 
 
+    def cob_management(self):
+        # Hole aktuell ausgewählten Anlagentyp
+        current_text = self.ui.cob_typ.currentText()
 
+        # Logik zur Steuerung der Sichtbarkeit der Einträge in Hardware Combo Box
+        if current_text == "phs":
+            # Wenn "phs" ausgewählt ist, blendet "hardwired" aus
+            index = self.ui.cob_hardware.findText("hardwired")
+            self.ui.cob_hardware.removeItem(index)
+        else:
+            # Stelle sicher, dass "Item B" vorhanden ist, wenn nicht "Option 1" gewählt ist
+            if self.ui.cob_hardware.findText("hardwired") == -1:
+                self.ui.cob_hardware.addItem("hardwired")
 
 
     def switch_widget(self,index):
@@ -28,63 +44,35 @@ class MainWindow(QMainWindow):
     
     def generator(self):
 
-        # Basispfad zu den Vorlagen
-        base_path = "Z:/vm_austausch/SS_Tool/vorlagenpool"
+        # lösche Dialogfeld
+        self.ui.lb_error.setText("")
         
-        # erzeuge Pfad für Anlagentyp
-        path = os.path.join(base_path, self.ui.cob_typ.currentData)
+        # hole Dateipfad, wo gespeichert werden soll
+        filepath, _ = QFileDialog.getSaveFileName(
+            self,
+            "Dokument speichern unter",
+            "Z:/vm_austausch/SS_Tool/",
+            "Word Dokument (*.docx)",
+        )
 
-        # erzeuge Basis Dokument
-        basedoc = docx.Document(os.path.join(path, "1_head", "head.docx"))
-
-        # restliche Dokumente zum zusammenführen
-        snippet_list = []
-
-        # Hardware
-        snippet_list.append(os.path.join(path, "2_hardware", self.ui.cob_hardware.currentData, self.ui.cob_hardware.currentData + "_" + self.ui.cob_interlock_length.currentData + ".docx"))
-        
-        # Wenn Option 24-poliger Stecker, füge Seite ein
-        if self.ui.cb_24_pins.isChecked == True:
-            snippet_list.append(os.path.join(path, "2_hardware", "optional_24pol", "optional_24pol.docx"))
-        
-        # Safety Signals
-        if self.ui.cb_24_pins.isChecked == True:
-            snippet_list.append(os.path.join(path, "3_safety_signals", "safety_24pol", "safety_24pol.docx"))
-        
+        # Überprüfe, ob ein Dateipfad ausgewählt wurde
+        if filepath:
+            try:
+                generate_document(
+                    "Z:/vm_austausch/SS_Tool/vorlagenpool",
+                    self.ui.cob_typ.currentText(),
+                    self.ui.cob_hardware.currentText(),
+                    self.ui.cob_interlock_length.currentText(),
+                    self.ui.cb_24_pins.isChecked(),
+                    filepath
+                )
+                self.ui.lb_error.setText("Dokument erfolgreich gespeichert.")  # Erfolgsmeldung
+            except PermissionError as e:
+                self.ui.lb_error.setText(f"Fehler: Zugriff verweigert - {str(e)}")  # Zeigt den Fehler an
+            except Exception as e:
+                self.ui.lb_error.setText(f"Ein unbekannter Fehler ist aufgetreten: {str(e)}")  # Fängt andere mögliche Fehler
         else:
-            snippet_list.append(os.path.join(path, "3_safety_signals", "profisafe.docx"))
-
-        # Standard Signals
-        snippet_list.append(os.path.join(path, "4_standard_signals", "signals.docx"))
-
-        # End 
-        snippet_list.append(os.path.join(path, "5_end", "end.docx"))
-    
-        # erzeuge Composer Objekt
-        composer = Composer(basedoc)
-
-        # erzeuge Seitenumbruch nach erster Seite
-        basedoc.add_page_break()
-
-        # füge alle restlichen snippets hinzu
-        for i, snippet in enumerate(snippet_list):
-            tmp_object = docx.Document(snippet)
-            
-            # Bei letztem Snippet keinen Pagebreak mehr
-            if i < len(snippet_list)-1:
-                tmp_object.add_page_break()
-
-            composer.append(tmp_object)
-            
-            
-        # neues Dokument speichern
-        
-        composer.save('Z:/vm_austausch/merged_document.docx')
-
-
-
-
-
+            self.ui.lb_error.setText("Kein Dateipfad ausgewählt.")
 
 
 
