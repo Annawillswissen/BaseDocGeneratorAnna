@@ -156,6 +156,9 @@ border-radius: 25px;</string>
     </widget>
    </widget>
    <widget class="QStackedWidget" name="sw_nav_bar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -422,6 +425,9 @@ border-radius: 25px;</string>
       </item>
      </widget>
      <widget class="QCheckBox" name="cb_24_pins">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -435,6 +441,9 @@ border-radius: 25px;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pb_start">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>10</x>
