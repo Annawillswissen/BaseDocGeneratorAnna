@@ -291,25 +291,6 @@ border-radius: 0px;</string>
        <string>Hardware</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>280</y>
-        <width>141</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <bold>true</bold>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="text">
-       <string>Opt. 24-poliger Stecker</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="le_fn_number">
       <property name="geometry">
        <rect>
@@ -357,7 +338,7 @@ border-radius: 0px;</string>
        <rect>
         <x>360</x>
         <y>130</y>
-        <width>181</width>
+        <width>191</width>
         <height>22</height>
        </rect>
       </property>
@@ -454,22 +435,6 @@ border-radius: 0px;</string>
        </property>
       </item>
      </widget>
-     <widget class="QCheckBox" name="cb_24_pins">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>280</y>
-        <width>21</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pb_start">
       <property name="enabled">
        <bool>true</bool>
@@ -477,7 +442,7 @@ border-radius: 0px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>350</y>
+        <y>320</y>
         <width>131</width>
         <height>51</height>
        </rect>
@@ -490,7 +455,7 @@ border-radius: 0px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>310</y>
+        <y>280</y>
         <width>61</width>
         <height>16</height>
        </rect>
@@ -509,7 +474,7 @@ border-radius: 0px;</string>
       <property name="geometry">
        <rect>
         <x>150</x>
-        <y>310</y>
+        <y>280</y>
         <width>69</width>
         <height>22</height>
        </rect>
@@ -525,7 +490,7 @@ border-radius: 0px;</string>
        <rect>
         <x>150</x>
         <y>160</y>
-        <width>391</width>
+        <width>261</width>
         <height>22</height>
        </rect>
       </property>
@@ -579,6 +544,74 @@ border-radius: 0px;</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_project_name">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>70</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Projekt Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>220</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Safety</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cob_safety">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>220</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>24-pol</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Profisafe</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="le_phone">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>160</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Telefon</string>
       </property>
      </widget>
     </widget>
