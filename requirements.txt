@@ -2,3 +2,6 @@
 # install all entries with pip install -r requirements.txt
 
 PySide6
+docx
+docxcompose
+
