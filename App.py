@@ -11,10 +11,11 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         
         # Management zwischen den combo boxen
-        self.ui.cob_typ.currentIndexChanged.connect(self.cob_management)
+        self.ui.cob_typ.currentIndexChanged.connect(self.cob_hw_management)
+        self.ui.cob_safety.currentIndexChanged.connect(self.cob_safety_management)
 
         # Navigation Buttons
-        self.ui.pb_Schnittstellen.clicked.connect(lambda: self.switch_widget(0))          #_test.clicked.connect(self.on_pb_test_clicked)
+        self.ui.pb_Schnittstellen.clicked.connect(lambda: self.switch_widget(0))
         self.ui.pb_SoO.clicked.connect(lambda: self.switch_widget(1))
         self.ui.pb_spare.clicked.connect(lambda: self.switch_widget(2))
 
@@ -23,7 +24,7 @@ class MainWindow(QMainWindow):
 
 
 
-    def cob_management(self):
+    def cob_hw_management(self):
         # Hole aktuell ausgewählten Anlagentyp
         current_text = self.ui.cob_typ.currentText()
 
@@ -33,10 +34,27 @@ class MainWindow(QMainWindow):
             index = self.ui.cob_hardware.findText("hardwired")
             self.ui.cob_hardware.removeItem(index)
         else:
-            # Stelle sicher, dass "Item B" vorhanden ist, wenn nicht "Option 1" gewählt ist
+            # Stelle sicher, dass item vorhanden ist, wenn nicht "Option 1" gewählt ist
             if self.ui.cob_hardware.findText("hardwired") == -1:
                 self.ui.cob_hardware.addItem("hardwired")
 
+    def cob_safety_management(self):
+        # Hole aktuell ausgewählte safety variante
+        current_text = self.ui.cob_safety.currentText()
+
+        # Logik zur Steuerung der Sichtbarkeit der Einträge bezüglich 24-pol. Stecker
+        if current_text == "24-pol":
+            # Wenn safety 24-pol ausgewählt ist, blende Harting "Nein" aus
+            index = self.ui.cob_harting.findText("Nein")
+            self.ui.cob_harting.removeItem(index)
+        else:
+            # Stelle sicher, dass item vorhanden ist, wenn nicht safety "Profisafe" gewählt ist
+            if self.ui.cob_harting.findText("Nein") == -1:
+                self.ui.cob_harting.addItem("Nein")
+
+                # wähle "Nein" vor
+                index = self.ui.cob_harting.findText("Nein")
+                self.ui.cob_harting.setCurrentIndex(index)
 
     def switch_widget(self,index):
         self.ui.sw_nav_bar.setCurrentIndex(index)
@@ -63,7 +81,8 @@ class MainWindow(QMainWindow):
                     self.ui.cob_typ.currentText(),
                     self.ui.cob_hardware.currentText(),
                     self.ui.cob_interlock_length.currentText(),
-                    self.ui.cb_24_pins.isChecked(),
+                    self.ui.cob_safety.currentText(),
+                    self.ui.cob_harting.currentText(),
                     filepath
                 )
                 self.ui.lb_error.setText("Dokument erfolgreich gespeichert.")  # Erfolgsmeldung

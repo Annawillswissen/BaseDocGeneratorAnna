@@ -202,16 +202,24 @@ class Ui_MainWindow(object):
         self.le_project_name.setGeometry(QRect(270, 70, 113, 22))
         self.label_6 = QLabel(self.Interlocks)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(270, 220, 41, 21))
+        self.label_6.setGeometry(QRect(418, 206, 50, 51))
         self.label_6.setFont(font2)
+        self.cob_harting = QComboBox(self.Interlocks)
+        self.cob_harting.addItem("")
+        self.cob_harting.setObjectName(u"cob_harting")
+        self.cob_harting.setGeometry(QRect(473, 220, 61, 22))
+        self.le_phone = QLineEdit(self.Interlocks)
+        self.le_phone.setObjectName(u"le_phone")
+        self.le_phone.setGeometry(QRect(420, 160, 131, 22))
+        self.label_8 = QLabel(self.Interlocks)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(270, 220, 41, 21))
+        self.label_8.setFont(font2)
         self.cob_safety = QComboBox(self.Interlocks)
         self.cob_safety.addItem("")
         self.cob_safety.addItem("")
         self.cob_safety.setObjectName(u"cob_safety")
-        self.cob_safety.setGeometry(QRect(320, 220, 91, 22))
-        self.le_phone = QLineEdit(self.Interlocks)
-        self.le_phone.setObjectName(u"le_phone")
-        self.le_phone.setGeometry(QRect(420, 160, 131, 22))
+        self.cob_safety.setGeometry(QRect(315, 220, 71, 22))
         self.sw_nav_bar.addWidget(self.Interlocks)
         self.SoO = QWidget()
         self.SoO.setObjectName(u"SoO")
@@ -286,7 +294,7 @@ class Ui_MainWindow(object):
         self.cob_interlock_length.setItemText(0, QCoreApplication.translate("MainWindow", u"32", None))
         self.cob_interlock_length.setItemText(1, QCoreApplication.translate("MainWindow", u"64", None))
 
-        self.pb_start.setText(QCoreApplication.translate("MainWindow", u"Generiere Dokumente", None))
+        self.pb_start.setText(QCoreApplication.translate("MainWindow", u"Generiere Dokument", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Sprache", None))
         self.cob_language.setItemText(0, QCoreApplication.translate("MainWindow", u"Deutsch", None))
 
@@ -297,11 +305,22 @@ class Ui_MainWindow(object):
         self.le_project_name.setToolTip("")
 #endif // QT_CONFIG(tooltip)
         self.le_project_name.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Projekt Name", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Safety", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:700; font-style:normal;\">\n"
+"<p style=\" margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">zus\u00e4tzl. </p>\n"
+"<p style=\" margin-top:1px; margin-bottom:1px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Harting</p></body></html>", None))
+        self.cob_harting.setItemText(0, QCoreApplication.translate("MainWindow", u"Ja", None))
+
+        self.le_phone.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Telefon", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Safety", None))
         self.cob_safety.setItemText(0, QCoreApplication.translate("MainWindow", u"24-pol", None))
         self.cob_safety.setItemText(1, QCoreApplication.translate("MainWindow", u"Profisafe", None))
 
-        self.le_phone.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Telefon", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"not programmed yet", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Systembeschreibung", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"not programmed yet", None))

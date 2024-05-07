@@ -2,7 +2,7 @@ import os
 from docxcompose.composer import Composer
 from docx import Document
 
-def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cb_24_pins, filepath):
+def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cob_safety, cob_harting, filepath):
     # erzeuge Pfad für Anlagentyp
     path = os.path.join(base_path, cob_typ)
 
@@ -15,14 +15,15 @@ def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cb
     # Hardware
     snippet_list.append(os.path.join(path, "2_hardware", cob_hardware, cob_hardware + "_" + cob_interlock_length + ".docx"))
     
-    # Wenn Option 24-poliger Stecker, füge Seite ein
-    if cb_24_pins:
+    # 24-poliger Ja/Nein
+    if cob_harting == "Ja":
         snippet_list.append(os.path.join(path, "2_hardware", "optional_24pol", "optional_24pol.docx"))
     
     # Safety Signals
-    if cb_24_pins:
+    if cob_safety == "24-pol":
         snippet_list.append(os.path.join(path, "3_safety_signals", "safety_24pol", "safety_24pol.docx"))
-    else:
+
+    elif cob_safety == "Profisafe":
         snippet_list.append(os.path.join(path, "3_safety_signals", "profisafe.docx"))
 
     # Standard Signals
