@@ -108,7 +108,15 @@ class MainWindow(QMainWindow):
                     self.ui.cob_interlock_length.currentText(),
                     self.ui.cob_safety.currentText(),
                     self.ui.cob_harting.currentText(),
-                    filepath
+                    filepath,
+                    self.ui.le_fn_number.text(),
+                    self.ui.le_project_name.text(),
+                    self.ui.le_customer.text(),
+                    self.ui.le_firstname.text(),
+                    self.ui.le_lastname.text(),
+                    self.ui.le_email.text(),
+                    self.ui.le_phone.text()
+
                 )
                 self.ui.lb_error.setText("Dokument erfolgreich gespeichert.")  # Erfolgsmeldung
             except PermissionError as e:
@@ -117,6 +125,7 @@ class MainWindow(QMainWindow):
                 self.ui.lb_error.setText(f"Ein unbekannter Fehler ist aufgetreten: {str(e)}")  # Fängt andere mögliche Fehler
         else:
             self.ui.lb_error.setText("Kein Dateipfad ausgewählt.")
+            
 
 
 

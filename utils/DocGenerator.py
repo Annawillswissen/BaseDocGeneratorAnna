@@ -1,8 +1,9 @@
 import os
 from docxcompose.composer import Composer
 from docx import Document
+from utils.replaceContent import setTextToContentControl
 
-def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cob_safety, cob_harting, filepath):
+def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cob_safety, cob_harting, filepath, fn_number, project_name, customer, firstname, lastname, email, phone):
     # erzeuge Pfad für Anlagentyp
     path = os.path.join(base_path, cob_typ)
 
@@ -51,5 +52,15 @@ def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, co
 
         composer.append(tmp_object)
     
-    # Dokument speichern              
+
+    # Felder manipulieren vor dem Speichern
+    setTextToContentControl(composer.doc, "Projektname", project_name)
+    setTextToContentControl(composer.doc, "Auftragsnummer", fn_number)
+    setTextToContentControl(composer.doc, "Kunde", customer)
+    setTextToContentControl(composer.doc, "Kontakt", firstname + " " + lastname + " (LVT)")
+    setTextToContentControl(composer.doc, "Mail", email)
+    setTextToContentControl(composer.doc, "Telefon", phone)
+
+    # Dokument speichern
     composer.save(filepath)
+
