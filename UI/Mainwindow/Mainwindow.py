@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 500)
         MainWindow.setMinimumSize(QSize(800, 500))
         MainWindow.setMaximumSize(QSize(800, 500))
+        icon = QIcon()
+        icon.addFile(u"../icons/logo.png", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(u"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -158,10 +161,10 @@ class Ui_MainWindow(object):
         self.cob_hardware.addItem("")
         self.cob_hardware.setObjectName(u"cob_hardware")
         self.cob_hardware.setGeometry(QRect(150, 220, 91, 22))
-        self.label_11 = QLabel(self.Interlocks)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(10, 250, 131, 16))
-        self.label_11.setFont(font2)
+        self.lb_interlock_length = QLabel(self.Interlocks)
+        self.lb_interlock_length.setObjectName(u"lb_interlock_length")
+        self.lb_interlock_length.setGeometry(QRect(10, 250, 131, 16))
+        self.lb_interlock_length.setFont(font2)
         self.cob_interlock_length = QComboBox(self.Interlocks)
         self.cob_interlock_length.addItem("")
         self.cob_interlock_length.addItem("")
@@ -264,7 +267,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"BaseDocGenerator", None))
         self.pb_Schnittstellen.setText(QCoreApplication.translate("MainWindow", u"Schnittstellen", None))
         self.pb_SoO.setText(QCoreApplication.translate("MainWindow", u"SoO", None))
         self.pb_spare.setText(QCoreApplication.translate("MainWindow", u"spare", None))
@@ -290,7 +293,7 @@ class Ui_MainWindow(object):
         self.cob_hardware.setItemText(1, QCoreApplication.translate("MainWindow", u"profibus", None))
         self.cob_hardware.setItemText(2, QCoreApplication.translate("MainWindow", u"hardwired", None))
 
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"L\u00e4nge Interlock in Byte", None))
+        self.lb_interlock_length.setText(QCoreApplication.translate("MainWindow", u"L\u00e4nge Interlock in Byte", None))
         self.cob_interlock_length.setItemText(0, QCoreApplication.translate("MainWindow", u"32", None))
         self.cob_interlock_length.setItemText(1, QCoreApplication.translate("MainWindow", u"64", None))
 

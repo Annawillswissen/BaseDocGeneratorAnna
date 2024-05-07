@@ -1,8 +1,7 @@
-import sys, os, docx, time
-from docxcompose.composer import Composer
+import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
-from UI.Mainwindow.Mainwindow import Ui_MainWindow  # Pfad entsprechend anpassen
-from DocGenerator import generate_document
+from UI.Mainwindow.Mainwindow import Ui_MainWindow
+from utils.DocGenerator import generate_document
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -11,8 +10,9 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         
         # Management zwischen den combo boxen
-        self.ui.cob_typ.currentIndexChanged.connect(self.cob_hw_management)
+        self.ui.cob_typ.currentIndexChanged.connect(self.cob_typ_management)
         self.ui.cob_safety.currentIndexChanged.connect(self.cob_safety_management)
+        self.ui.cob_hardware.currentIndexChanged.connect(self.cob_hw_management)
 
         # Navigation Buttons
         self.ui.pb_Schnittstellen.clicked.connect(lambda: self.switch_widget(0))
@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
 
 
 
-    def cob_hw_management(self):
+    def cob_typ_management(self):
         # Hole aktuell ausgewählten Anlagentyp
         current_text = self.ui.cob_typ.currentText()
 
@@ -55,6 +55,31 @@ class MainWindow(QMainWindow):
                 # wähle "Nein" vor
                 index = self.ui.cob_harting.findText("Nein")
                 self.ui.cob_harting.setCurrentIndex(index)
+
+
+    def cob_hw_management(self):
+        # Hole aktuell ausgewählten Anlagentyp
+        current_text = self.ui.cob_hardware.currentText()
+
+        # wenn hardware == profibus, blende Profisafe aus
+        if current_text == "profibus" or current_text == "hardwired":
+            # Wenn "profibus" ausgewählt ist, blende "Profisafe" aus
+            index = self.ui.cob_safety.findText("Profisafe")
+            self.ui.cob_safety.removeItem(index)
+
+        elif current_text == "profinet":
+            # füge Profisafe hinzu wenn Profinet angewählt ist
+            if self.ui.cob_safety.findText("Profisafe") == -1:
+                self.ui.cob_safety.addItem("Profisafe")
+
+        if current_text == "hardwired":
+            self.ui.lb_interlock_length.setHidden(True)
+            self.ui.cob_interlock_length.setHidden(True)
+        else:
+            self.ui.lb_interlock_length.setHidden(False)
+            self.ui.cob_interlock_length.setHidden(False)
+
+            
 
     def switch_widget(self,index):
         self.ui.sw_nav_bar.setCurrentIndex(index)

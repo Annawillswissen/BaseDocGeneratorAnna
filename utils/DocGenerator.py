@@ -13,7 +13,10 @@ def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, co
     snippet_list = []
 
     # Hardware
-    snippet_list.append(os.path.join(path, "2_hardware", cob_hardware, cob_hardware + "_" + cob_interlock_length + ".docx"))
+    if cob_hardware == "hardwired":
+        snippet_list.append(os.path.join(path, "2_hardware", cob_hardware, cob_hardware + ".docx"))
+    else:
+        snippet_list.append(os.path.join(path, "2_hardware", cob_hardware, cob_hardware + "_" + cob_interlock_length + ".docx"))
     
     # 24-poliger Ja/Nein
     if cob_harting == "Ja":
