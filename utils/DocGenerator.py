@@ -3,7 +3,50 @@ from docxcompose.composer import Composer
 from docx import Document
 from utils.replaceContent import setTextToContentControl
 
-def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, cob_safety, cob_harting, filepath, fn_number, project_name, customer, firstname, lastname, email, phone):
+from docx import Document
+from docx.oxml import OxmlElement
+
+
+
+
+# import win32com.client as win32
+
+# def update_toc(filepath):
+#     try:
+#         word = win32.Dispatch("Word.Application")
+#         word.Visible = False  # Word-Fenster nicht anzeigen
+#         doc = word.Documents.Open(filepath)
+#         doc.TablesOfContents(1).Update()
+#         doc.Close(SaveChanges=True)
+#         word.Quit()
+#     except Exception as e:
+#         print(f"Ein Fehler ist aufgetreten: {e}")
+
+# # Pfad zum Word-Dokument
+# filepath = 'path/to/your/document.docx'
+# update_toc(filepath)
+
+
+
+
+def generate_document(params):
+
+    # drösle dictionary auf und speicher in lokale variablen
+    base_path = params['path_doc_pool']
+    cob_typ = params['typ']
+    cob_hardware = params['hardware']
+    cob_interlock_length = params['interlock_length']
+    cob_safety = params['safety']
+    cob_harting = params['harting']
+    filepath = params['save_filepath']
+    fn_number = params['fn_number']
+    project_name = params['project_name']
+    customer = params['customer']
+    firstname = params['firstname']
+    lastname = params['lastname']
+    email = params['email']
+    phone = params['phone']
+    
     # erzeuge Pfad für Anlagentyp
     path = os.path.join(base_path, cob_typ)
 
@@ -62,5 +105,5 @@ def generate_document(base_path, cob_typ, cob_hardware, cob_interlock_length, co
     setTextToContentControl(composer.doc, "Telefon", phone)
 
     # Dokument speichern
+    #update_table_of_contents(composer.doc)
     composer.save(filepath)
-

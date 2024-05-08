@@ -3,6 +3,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
 from UI.Mainwindow.Mainwindow import Ui_MainWindow
 from utils.DocGenerator import generate_document
 
+
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -100,24 +101,28 @@ class MainWindow(QMainWindow):
 
         # Überprüfe, ob ein Dateipfad ausgewählt wurde
         if filepath:
-            try:
-                generate_document(
-                    "Z:/vm_austausch/SS_Tool/vorlagenpool",
-                    self.ui.cob_typ.currentText(),
-                    self.ui.cob_hardware.currentText(),
-                    self.ui.cob_interlock_length.currentText(),
-                    self.ui.cob_safety.currentText(),
-                    self.ui.cob_harting.currentText(),
-                    filepath,
-                    self.ui.le_fn_number.text(),
-                    self.ui.le_project_name.text(),
-                    self.ui.le_customer.text(),
-                    self.ui.le_firstname.text(),
-                    self.ui.le_lastname.text(),
-                    self.ui.le_email.text(),
-                    self.ui.le_phone.text()
 
-                )
+            # Dokumenten Parameter festlegen
+            doc_params = {
+            'path_doc_pool': "Z:/vm_austausch/SS_Tool/vorlagenpool",
+            'typ': self.ui.cob_typ.currentText(),
+            'hardware': self.ui.cob_hardware.currentText(),
+            'interlock_length': self.ui.cob_interlock_length.currentText(),
+            'safety': self.ui.cob_safety.currentText(),
+            'harting': self.ui.cob_harting.currentText(),
+            'save_filepath': filepath,
+            'fn_number': self.ui.le_fn_number.text(),
+            'project_name': self.ui.le_project_name.text(),
+            'customer': self.ui.le_customer.text(),
+            'firstname': self.ui.le_firstname.text(),
+            'lastname': self.ui.le_lastname.text(),
+            'email': self.ui.le_email.text(),
+            'phone': self.ui.le_phone.text()
+        }
+            
+
+            try:
+                generate_document(doc_params)
                 self.ui.lb_error.setText("Dokument erfolgreich gespeichert.")  # Erfolgsmeldung
             except PermissionError as e:
                 self.ui.lb_error.setText(f"Fehler: Zugriff verweigert - {str(e)}")  # Zeigt den Fehler an
@@ -125,8 +130,10 @@ class MainWindow(QMainWindow):
                 self.ui.lb_error.setText(f"Ein unbekannter Fehler ist aufgetreten: {str(e)}")  # Fängt andere mögliche Fehler
         else:
             self.ui.lb_error.setText("Kein Dateipfad ausgewählt.")
+        #generate_document(doc_params)
             
 
+    
 
 
 
