@@ -135,7 +135,7 @@ QPushButton:pressed {
       <x>10</x>
       <y>10</y>
       <width>191</width>
-      <height>481</height>
+      <height>771</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -146,7 +146,7 @@ border-radius: 25px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>400</y>
+       <y>686</y>
        <width>191</width>
        <height>41</height>
       </rect>
@@ -172,7 +172,7 @@ border-radius: 0px;</string>
      <property name="geometry">
       <rect>
        <x>6</x>
-       <y>444</y>
+       <y>730</y>
        <width>31</width>
        <height>20</height>
       </rect>
@@ -695,9 +695,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>170</y>
+        <y>160</y>
         <width>571</width>
-        <height>611</height>
+        <height>621</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -709,9 +709,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>40</y>
-          <width>571</width>
-          <height>561</height>
+          <y>20</y>
+          <width>551</width>
+          <height>581</height>
          </rect>
         </property>
         <property name="sizePolicy">
@@ -737,17 +737,17 @@ li.checked::marker { content: &quot;\2612&quot;; }
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>552</width>
-           <height>918</height>
+           <width>532</width>
+           <height>1618</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="1">
+          <item row="0" column="0">
            <widget class="QFrame" name="frame">
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>900</height>
+              <height>1600</height>
              </size>
             </property>
             <property name="frameShape">
@@ -759,8 +759,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLabel" name="label1_3">
              <property name="geometry">
               <rect>
-               <x>20</x>
-               <y>60</y>
+               <x>13</x>
+               <y>146</y>
                <width>141</width>
                <height>16</height>
               </rect>
@@ -778,8 +778,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLineEdit" name="le_fn_number_3">
              <property name="geometry">
               <rect>
-               <x>170</x>
-               <y>54</y>
+               <x>190</x>
+               <y>142</y>
                <width>51</width>
                <height>20</height>
               </rect>
@@ -797,8 +797,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLabel" name="label1_4">
              <property name="geometry">
               <rect>
-               <x>20</x>
-               <y>90</y>
+               <x>13</x>
+               <y>180</y>
                <width>141</width>
                <height>16</height>
               </rect>
@@ -810,14 +810,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
               </font>
              </property>
              <property name="text">
-              <string>benötigte Laufwagen</string>
+              <string>Benötigte Laufwagen</string>
              </property>
             </widget>
             <widget class="QLabel" name="label1_5">
              <property name="geometry">
               <rect>
-               <x>170</x>
-               <y>90</y>
+               <x>189</x>
+               <y>180</y>
                <width>81</width>
                <height>16</height>
               </rect>
@@ -835,8 +835,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLabel" name="label1_6">
              <property name="geometry">
               <rect>
-               <x>300</x>
-               <y>90</y>
+               <x>319</x>
+               <y>180</y>
                <width>81</width>
                <height>16</height>
               </rect>
@@ -854,8 +854,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLabel" name="label1_7">
              <property name="geometry">
               <rect>
-               <x>170</x>
-               <y>110</y>
+               <x>189</x>
+               <y>200</y>
                <width>211</width>
                <height>16</height>
               </rect>
@@ -873,8 +873,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QCheckBox" name="checkBox">
              <property name="geometry">
               <rect>
-               <x>250</x>
-               <y>89</y>
+               <x>269</x>
+               <y>179</y>
                <width>21</width>
                <height>20</height>
               </rect>
@@ -886,8 +886,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QCheckBox" name="checkBox_2">
              <property name="geometry">
               <rect>
-               <x>380</x>
-               <y>90</y>
+               <x>399</x>
+               <y>180</y>
                <width>21</width>
                <height>20</height>
               </rect>
@@ -899,8 +899,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QCheckBox" name="checkBox_3">
              <property name="geometry">
               <rect>
-               <x>380</x>
-               <y>110</y>
+               <x>399</x>
+               <y>200</y>
                <width>21</width>
                <height>20</height>
               </rect>
@@ -931,7 +931,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <widget class="QLabel" name="label1_9">
              <property name="geometry">
               <rect>
-               <x>160</x>
+               <x>190</x>
                <y>10</y>
                <width>141</width>
                <height>16</height>
@@ -945,6 +945,1712 @@ li.checked::marker { content: &quot;\2612&quot;; }
              </property>
              <property name="text">
               <string>Rohteil/Fertigteil</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_4">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>7</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_10">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>33</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Zelle/Linie</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_5">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>30</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_6">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>52</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Befestigungstypen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_11">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>55</y>
+               <width>101</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Befestigungstypen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_12">
+             <property name="geometry">
+              <rect>
+               <x>14</x>
+               <y>250</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Leitrechner</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_7">
+             <property name="geometry">
+              <rect>
+               <x>253</x>
+               <y>250</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_13">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>250</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>vorhanden</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_4">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>250</y>
+               <width>151</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Name des Systems</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_14">
+             <property name="geometry">
+              <rect>
+               <x>15</x>
+               <y>290</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Energieeinsparung</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_15">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>290</y>
+               <width>81</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_8">
+             <property name="geometry">
+              <rect>
+               <x>253</x>
+               <y>290</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="Line" name="line">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>130</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_16">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>120</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>GENERELLE INFORMATIONEN</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_17">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>330</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_5">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>324</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_18">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>380</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>TEILE INFORMATIONEN</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>390</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_19">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>410</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Identifikation der Teile</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_20">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>411</y>
+               <width>51</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Kamera</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_9">
+             <property name="geometry">
+              <rect>
+               <x>360</x>
+               <y>411</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_21">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>411</y>
+               <width>81</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>RFID</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_10">
+             <property name="geometry">
+              <rect>
+               <x>253</x>
+               <y>410</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_22">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>438</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Verfolgbarkeit</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_11">
+             <property name="geometry">
+              <rect>
+               <x>253</x>
+               <y>440</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_23">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>440</y>
+               <width>81</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_24">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>476</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_6">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>470</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_7">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>440</y>
+               <width>151</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Name des Systems</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_25">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>560</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Betriebsfunktionen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_27">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>530</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>BASIS FUNKTIONEN</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>540</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="cob_typ_3">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>560</y>
+               <width>91</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>Daimler</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ford</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Allgemein</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label1_26">
+             <property name="geometry">
+              <rect>
+               <x>15</x>
+               <y>597</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Halt nach Taktende</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_28">
+             <property name="geometry">
+              <rect>
+               <x>194</x>
+               <y>600</y>
+               <width>211</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Halt nach Taktende in Service Position</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_29">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>631</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Längenkompensation</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_12">
+             <property name="geometry">
+              <rect>
+               <x>364</x>
+               <y>630</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Temperaturkompensation</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_30">
+             <property name="geometry">
+              <rect>
+               <x>193</x>
+               <y>631</y>
+               <width>151</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Temperaturkompensation</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_13">
+             <property name="geometry">
+              <rect>
+               <x>364</x>
+               <y>653</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>zusätzliche Kompensation</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_31">
+             <property name="geometry">
+              <rect>
+               <x>196</x>
+               <y>654</y>
+               <width>151</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>zusätzliche Kompensation</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_32">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>690</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Stacklight</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_14">
+             <property name="geometry">
+              <rect>
+               <x>263</x>
+               <y>709</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>mit Horn</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_33">
+             <property name="geometry">
+              <rect>
+               <x>196</x>
+               <y>710</y>
+               <width>51</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>mit Horn</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_34">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>710</y>
+               <width>111</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>mit Zusatzfunktion</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_15">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>710</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>mit Horn</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_16">
+             <property name="geometry">
+              <rect>
+               <x>263</x>
+               <y>690</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_35">
+             <property name="geometry">
+              <rect>
+               <x>196</x>
+               <y>690</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_17">
+             <property name="geometry">
+              <rect>
+               <x>430</x>
+               <y>750</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>mit Horn</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_37">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>750</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_38">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>750</y>
+               <width>131</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>in Safety eingebunden</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_39">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>750</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sumpfpumpe</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_19">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>750</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_36">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>870</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>MASCHINEN FUNKTIONEN</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>880</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_40">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>786</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_8">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>780</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_41">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>910</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Vorpositionen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_42">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>910</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_20">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>910</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_43">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>940</y>
+               <width>161</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Seat-Check in der Maschine</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_44">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>940</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_21">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>940</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_45">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>970</y>
+               <width>161</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Ladeluken</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_48">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>970</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>vorhanden</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_23">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>970</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="cob_typ_4">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>970</y>
+               <width>141</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>von uns gesteuert</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>von Maschine gesteuert</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label1_46">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1000</y>
+               <width>161</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Chip-Dump</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_47">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>1000</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_22">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>1000</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="Line" name="line_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>1100</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_49">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>1090</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>WEITERE FUNKTIONEN</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_50">
+             <property name="geometry">
+              <rect>
+               <x>16</x>
+               <y>1036</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_9">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>1030</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_51">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>1130</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>SPC-Platz</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_52">
+             <property name="geometry">
+              <rect>
+               <x>195</x>
+               <y>1130</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_24">
+             <property name="geometry">
+              <rect>
+               <x>260</x>
+               <y>1130</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_25">
+             <property name="geometry">
+              <rect>
+               <x>380</x>
+               <y>1150</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_53">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>1150</y>
+               <width>191</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>mit Inspection-Counter-Handling</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_54">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1180</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Cell-Master</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_26">
+             <property name="geometry">
+              <rect>
+               <x>255</x>
+               <y>1180</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_55">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>1180</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_10">
+             <property name="geometry">
+              <rect>
+               <x>194</x>
+               <y>1214</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_56">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1220</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_57">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>1280</y>
+               <width>201</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>SCHNITTSTELLEN SYSTEME</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>1290</y>
+               <width>491</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_58">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>1320</y>
+               <width>171</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Signalaustausch Safety</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_27">
+             <property name="geometry">
+              <rect>
+               <x>255</x>
+               <y>1320</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Signalaustausch Safety</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_59">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>1320</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="cob_typ_5">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>1320</y>
+               <width>141</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>Kunde</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Liebherr</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kombination</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="label1_60">
+             <property name="geometry">
+              <rect>
+               <x>17</x>
+               <y>1350</y>
+               <width>171</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Anbindung ans Firmennetz</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_28">
+             <property name="geometry">
+              <rect>
+               <x>255</x>
+               <y>1350</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Signalaustausch Safety</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_61">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>1350</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_62">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1380</y>
+               <width>171</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Ferndiagnose (VPN)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_63">
+             <property name="geometry">
+              <rect>
+               <x>185</x>
+               <y>1380</y>
+               <width>61</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>false</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>benötigt</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_29">
+             <property name="geometry">
+              <rect>
+               <x>250</x>
+               <y>1380</y>
+               <width>21</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Signalaustausch Safety</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="le_fn_number_11">
+             <property name="geometry">
+              <rect>
+               <x>194</x>
+               <y>1404</y>
+               <width>311</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Kundenwünsche / weitere Kundenanforderungen</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label1_64">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1410</y>
+               <width>141</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <bold>true</bold>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonstiges</string>
              </property>
             </widget>
            </widget>
@@ -1134,6 +2840,34 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <zorder>sw_nav_bar</zorder>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>pb_Schnittstellen</tabstop>
+  <tabstop>pb_SoO</tabstop>
+  <tabstop>pb_spare</tabstop>
+  <tabstop>le_fn_number</tabstop>
+  <tabstop>le_customer</tabstop>
+  <tabstop>le_firstname</tabstop>
+  <tabstop>le_lastname</tabstop>
+  <tabstop>cob_typ</tabstop>
+  <tabstop>cob_hardware</tabstop>
+  <tabstop>cob_interlock_length</tabstop>
+  <tabstop>pb_start</tabstop>
+  <tabstop>cob_language</tabstop>
+  <tabstop>le_email</tabstop>
+  <tabstop>le_project_name</tabstop>
+  <tabstop>cob_harting</tabstop>
+  <tabstop>le_phone</tabstop>
+  <tabstop>cob_safety</tabstop>
+  <tabstop>le_fn_number_2</tabstop>
+  <tabstop>le_project_name_2</tabstop>
+  <tabstop>le_customer_2</tabstop>
+  <tabstop>cob_typ_2</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>le_fn_number_3</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>checkBox_3</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
